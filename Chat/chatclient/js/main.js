@@ -7,7 +7,7 @@ angular.module("ChatApp", ["ng", "ngRoute"])
 	}).when("/rooms/:roomId", {
 		templateUrl: "/views/room.html",
 		controller: "RoomCtrl"
-	}).otherwise({ redirectTo "/index"});
+	}).otherwise({ redirectTo: "/index"});
 });
 
 angular.module("ChatApp").controller("HomeCtrl",
